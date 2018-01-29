@@ -1,7 +1,7 @@
 {
     "name": "bml/form-theme-bundle",
     "description": "Bundle enables ability to define form theme in form type classes.",
-    "type": "library",
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
