@@ -14,11 +14,11 @@
     },
     "minimum-stability": "dev",
     "require": {
-        "symfony/form": "3.4.x-dev",
-        "symfony/twig-bridge": "3.4.x-dev",
-        "symfony/twig-bundle": "3.4.x-dev"
+        "symfony/form": ">=3.4",
+        "symfony/twig-bridge": ">=3.4",
+        "symfony/twig-bundle": ">=3.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "6.5.x-dev"
+        "phpunit/phpunit": "6.5"
     }
 }
