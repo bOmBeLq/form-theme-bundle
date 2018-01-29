@@ -1,0 +1,5 @@
+services:
+  bml.form_extension.theme:
+    class: Bml\FormThemeBundle\Form\Extension\FormTypeThemeExtension
+    arguments: ["@twig.form.engine", ".html.twig"]
+    tags: [{name: form.type_extension, extended_type: Symfony\Component\Form\Extension\Core\Type\FormType}]

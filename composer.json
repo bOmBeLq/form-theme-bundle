@@ -1,0 +1,24 @@
+{
+    "name": "bml/form-theme-bundle",
+    "description": "Bundle enables ability to define form theme in form type classes.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damian Wróblewski",
+            "email": "damianwroblewski75@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Bml\\FormThemeBundle\\": "" }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/form": "3.4.x-dev",
+        "symfony/twig-bridge": "3.4.x-dev",
+        "symfony/twig-bundle": "3.4.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.5.x-dev"
+    }
+}
