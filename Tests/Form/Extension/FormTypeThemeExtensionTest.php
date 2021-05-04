@@ -16,7 +16,7 @@ use Symfony\Component\Form\Test\TypeTestCase;
 class FormTypeThemeExtensionTest extends TypeTestCase
 {
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject|FormRendererEngineInterface
+     * @var \PHPUnit\Framework\MockObject\MockObject|FormRendererEngineInterface
      */
     private $formRendererEngine;
 
@@ -25,7 +25,7 @@ class FormTypeThemeExtensionTest extends TypeTestCase
      */
     private $extension;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->formRendererEngine = $this->getMockBuilder(FormRendererEngineInterface::class)->getMock();
         $this->extension = '.html.twig';
@@ -61,7 +61,7 @@ class FormTypeThemeExtensionTest extends TypeTestCase
         $setThemeView = null; // to make sure that setTheme receives the right form view
         $theme = '/path/to/theme';
         $this->formRendererEngine->expects($this->once())->method('setTheme')
-            ->with($this->isInstanceOf(FormView::class), $theme.$this->extension)
+            ->with($this->isInstanceOf(FormView::class), $theme . $this->extension)
             ->willReturnCallback(function ($view) use (&$setThemeView) {
                 $setThemeView = $view;
             });
